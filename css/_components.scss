@@ -90,9 +90,16 @@
     }
 }
 
+.wording2, .wording2b
+{
+    font-family: Inter !important;
+    
+}
+
 .wording2
 {
-    // 2 cases
+    // 2 case   s
+    font-size: 12px;
     @include breakpoint(min, small) {
         display: none;
     };
@@ -105,6 +112,7 @@
     // 2 cases
     @include breakpoint(min, small) {
         display: block;
+        font-size: 16px;
     };
 
 }

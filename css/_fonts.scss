@@ -1,32 +1,56 @@
 
 
 @font-face {
-    font-family: 'Good Offc';
-    src: url('../fonts/GoodOffc-Bold.woff2') format('woff2'),
-        url('../fonts/GoodOffc-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-
-@font-face {
-    font-family: 'Good Offc Narr';
-    src: url('../fonts/GoodOffc-Narr.woff2') format('woff2'),
-        url('../fonts/GoodOffc-Narr.woff') format('woff');
+    font-family: 'blickregular';
+    src: url('../fonts/code-next_regular-webfont.woff2') format('woff2'),
+         url('../fonts/code-next_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
+
+}
+
+@font-face {
+    font-family: 'blickextrabold';
+    src: url('../fonts/code-next_extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/code-next_extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 h1
 {
 
-    font-family: 'Good Offc', 'Arial Narrow', Impact, sans-serif;
+    font-family: 'blickextrabold', 'Arial Narrow', Impact, sans-serif;
     font-style: normal;
     text-shadow: 0px 3px 6px #00000080;
-    line-height: 1.1 !important;
+    line-height: 1.2 !important;
+
+    font-size:22px!important;
+
+    // 2 cases
+    @include breakpoint(min, small) {
+        font-size: 24px!important;
+    };
+
+    .blick
+    {
+        text-decoration-color: #f30707;
+    }
+
+    img
+    {
+        height: 24px;
+
+        right: -75px;
+        top: -5px;
+
+        // 2 cases
+        @include breakpoint(min, small) {
+            right: -75px;
+            top: -3px;
+        };
+    }
 
     // font-family: 'GoodBlackItalic', 'Arial Narrow', Impact, sans-serif;
     // font-style: italic;

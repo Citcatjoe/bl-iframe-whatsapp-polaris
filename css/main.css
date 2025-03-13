@@ -53,26 +53,44 @@
 }
 
 @font-face {
-  font-family: "Good Offc";
-  src: url("../fonts/GoodOffc-Bold.woff2") format("woff2"), url("../fonts/GoodOffc-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Good Offc Narr";
-  src: url("../fonts/GoodOffc-Narr.woff2") format("woff2"), url("../fonts/GoodOffc-Narr.woff") format("woff");
+  font-family: "blickregular";
+  src: url("../fonts/code-next_regular-webfont.woff2") format("woff2"), url("../fonts/code-next_regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+}
+@font-face {
+  font-family: "blickextrabold";
+  src: url("../fonts/code-next_extrabold-webfont.woff2") format("woff2"), url("../fonts/code-next_extrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 h1 {
-  font-family: "Good Offc", "Arial Narrow", Impact, sans-serif;
+  font-family: "blickextrabold", "Arial Narrow", Impact, sans-serif;
   font-style: normal;
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5019607843);
-  line-height: 1.1 !important;
+  line-height: 1.2 !important;
+  font-size: 22px !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+@media (min-width: 576px) {
+  h1 {
+    font-size: 24px !important;
+  }
+}
+h1 .blick {
+  text-decoration-color: #f30707;
+}
+h1 img {
+  height: 24px;
+  right: -75px;
+  top: -5px;
+}
+@media (min-width: 576px) {
+  h1 img {
+    right: -75px;
+    top: -3px;
+  }
 }
 
 h2 {
@@ -346,6 +364,13 @@ header.headroom--unpinned {
   }
 }
 
+.wording2, .wording2b {
+  font-family: Inter !important;
+}
+
+.wording2 {
+  font-size: 12px;
+}
 @media (min-width: 576px) {
   .wording2 {
     display: none;
@@ -358,6 +383,7 @@ header.headroom--unpinned {
 @media (min-width: 576px) {
   .wording2b {
     display: block;
+    font-size: 16px;
   }
 }
 
